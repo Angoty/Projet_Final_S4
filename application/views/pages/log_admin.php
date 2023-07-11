@@ -9,9 +9,10 @@
             <p>Votre email: <input type="text" class="form-control" name="email" value="<?php echo $admin['email']; ?>"></p>
             <p>Votre mot de passe: <input type="password" class="form-control" name="mdp" value="<?php echo $admin['mdp']; ?>"></p>
             <p><button type="submit" class="btn btn-outline-primary">Se connecter</button></p>                
-         </form>
+        </form>
 </body>
 </html>
+
 
 
 

@@ -3,9 +3,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Login extends CI_Controller {
 
-     public function index(){
+    public function index(){
         $this->load->view('pages/login');
-     }
+    }
 
 	public function check_login(){
         $email= $this->input->get('email');
@@ -26,7 +26,10 @@ class Login extends CI_Controller {
         $this->load->model('Login_models');
         $result= $this->Login_models->check_loginAdmin($email, $mdp);
         if($result==1){
-            $this->load->view('pages/accueilAdmin');
+            $idUser=$_SESSION['idAdmin'];
+            $this->load->model('Code_models');
+            $results['codes']=$this->Code_models->getCodePostValide();
+            $this->load->view('pages/accueilAdmin', $results);
         }else{
             $this->load->model('Login_models');
             $result['admin']= $this->Login_models->getAdmin();

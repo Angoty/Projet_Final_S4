@@ -7,7 +7,9 @@
 </head>
 <body>
     <h3>Administrateur</h3>
-    <a href="<?php echo site_url('Admin/quit')?>" class="nav-item nav-link">Deconnexion</a>
-
+    <a href="<?php echo site_url('Admin/quit')?>" class="">Deconnexion</a><br>
+    <a href="<?php echo site_url('Admin/list_proposition')?>" class="">Liste des REGIMES</a><br>
+    <a href="<?php echo site_url('Admin/add_plat')?>" class="">liens vers ajout PLAT</a><br>
+    <a href="<?php echo site_url('Admin/list_sport')?>" class="">liens vers SPORT</a><br>
 </body>
 </html>

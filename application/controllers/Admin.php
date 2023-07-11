@@ -9,5 +9,12 @@ class Admin extends CI_Controller {
         $result['admin']= $this->Login_models->getAdmin();
         $this->load->view('pages/login_admin', $result);
     }
+
+    public function stat(){
+        $this->load->view('pages/Graph');
+    }
+    public function table(){
+        $this->load->view('pages/Tableau');
+    }
 }
 ?>

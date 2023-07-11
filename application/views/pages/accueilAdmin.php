@@ -8,6 +8,14 @@
 <body>
     <h3>Administrateur</h3>
     <a href="<?php echo site_url('Admin/quit')?>" class="nav-item nav-link">Deconnexion</a>
-
+    <table>
+        <th></th>
+        <th></th>
+            <?php for($i=0; $i<count($codes); $i++){ ?>
+                <tr>
+                    <td><?php echo $codes[$i]['numero']?></td>
+                </tr>
+            <?php } ?>
+    </table>
 </body>
 </html>

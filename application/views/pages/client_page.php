@@ -9,6 +9,8 @@
 <body>
     <p>Bienvenue</p>
     <p><a href="<?php echo site_url('Utilisateur/')?>">Liste des codes</a></p>
-    <a href="<?php echo site_url('Utilisateur/quit')?>" class="nav-item nav-link">Deconnexion</a>
+    <p><a href="<?php echo site_url('Utilisateur/quit')?>" class="nav-item nav-link">Deconnexion</a></p>
+    <p><a href="<?php echo site_url('Utilisateur/IMC')?>" class="nav-item nav-link">liens vers IMC</a></p>
+    <p><a href="<?php echo site_url('Utilisateur/insert_informations')?>" class="nav-item nav-link">Ajout information</a></p>
 </body>
 </html>

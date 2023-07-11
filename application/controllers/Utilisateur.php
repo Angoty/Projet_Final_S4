@@ -7,12 +7,17 @@ class Utilisateur extends CI_Controller {
         redirect('Code/');
     }
 
-    public function insert($genre, $taille, $poids){
-        $idUser=$_SESSION['idUser'];
+    public function insert()
+    {
+        $this->load->model('Utilisateur_models'); 
+        $utilisateur = $_SESSION['idUser'];
         $genre = $this->input->post('genre');
         $taille = $this->input->post('taille');
         $poids = $this->input->post('poids');
-        $this->Utilisateur_models->insertInformation($idUser, $genre, $taille, $poids);
+        $choix = $this->input->post('choix');
+        $this->Utilisateur_models->insert_informations($utilisateur, $genre, $taille, $poids, $choix);
+        $result['data']=$this->Utilisateur_models->getGenres();
+        $this->load->view('pages/ajouter_informations', $result);
     }
 
     public function getGenre(){
@@ -24,6 +29,14 @@ class Utilisateur extends CI_Controller {
     public function quit(){
         $this->session->unset_userdata('idUser');
         $this->load->view('pages/login_client');
+    }
+
+    public function IMC() {
+		$this->load->view('pages/imc.php');
+	}
+
+    public function insert_information(){
+        $this->load->view('pages/ajouter_informations');
     }
 }
 ?>

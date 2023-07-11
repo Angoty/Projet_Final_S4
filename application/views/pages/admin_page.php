@@ -18,6 +18,8 @@
                 </tr>
             <?php } ?>
     </table>
+    <a href="<?php echo site_url('Admin/stat')?>">Statistique</a>
+    <a href="<?php echo site_url('Admin/table')?>">Tableau de bord</a>
     <a href="<?php echo site_url('Regime/list_proposition')?>" class="">Liste des REGIMES</a><br>
     <a href="<?php echo site_url('Regime/add_plat')?>" class="">liens vers ajout PLAT</a><br>
     <a href="<?php echo site_url('Regime/list_sport')?>" class="">liens vers SPORT</a><br>

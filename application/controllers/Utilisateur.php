@@ -20,5 +20,10 @@ class Utilisateur extends CI_Controller {
         $result['data']=$this->Utilisateur_models->getGenres();
         $this->load->view('pages/ajout_information', $result);
     }
+
+    public function quit(){
+        $this->session->unset_userdata('idUser');
+        $this->load->view('pages/login_client');
+    }
 }
 ?>

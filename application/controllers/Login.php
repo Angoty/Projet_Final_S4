@@ -4,7 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Login extends CI_Controller {
 
     public function index(){
-        $this->load->view('pages/login');
+        $this->load->view('pages/login_client');
     }
 
 	public function check_login(){
@@ -14,7 +14,7 @@ class Login extends CI_Controller {
         $result= $this->Login_models->check_login($email, $mdp);
         if($result==1){
             $idUser=$_SESSION['idUser'];            
-            $this->load->view('pages/accueil');
+            $this->load->view('pages/client_page');
         }else{
             $this->load->view('pages/login');
         }
@@ -24,12 +24,12 @@ class Login extends CI_Controller {
         $email= $this->input->get('email');
 		$mdp= $this->input->get('mdp');
         $this->load->model('Login_models');
+        $this->load->model('Code_models');
         $result= $this->Login_models->check_loginAdmin($email, $mdp);
         if($result==1){
             $idUser=$_SESSION['idAdmin'];
-            $this->load->model('Code_models');
-            $results['codes']=$this->Code_models->getCodePostValide();
-            $this->load->view('pages/accueilAdmin', $results);
+            $values['codes']=$this->Code_models->getListeCodeInvalide();
+            $this->load->view('pages/admin_page', $values);
         }else{
             $this->load->model('Login_models');
             $result['admin']= $this->Login_models->getAdmin();
@@ -39,8 +39,10 @@ class Login extends CI_Controller {
 
     public function show_Admin(){
         $this->load->model('Login_models');
+        $this->load->model('Code_models');
         $result['admin']= $this->Login_models->getAdmin();
-        $this->load->view('pages/log_admin',$result);
+        $data['codes']=$this->Code_models->getListeCodeInvalide();
+        $this->load->view('pages/login_admin', $result);
     }
 
 }

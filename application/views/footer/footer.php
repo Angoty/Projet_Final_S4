@@ -16,19 +16,14 @@
       </div>
       <!-- footer section end -->
       <!-- Javascript files-->
-      <script src="js/jquery.min.js"></script>
-      <script src="js/popper.min.js"></script>
-      <script src="js/bootstrap.bundle.min.js"></script>
-      <script src="js/jquery-3.0.0.min.js"></script>
-      <script src="js/plugin.js"></script>
+      <script src="/assets/js/jquery.min.js"></script>
+      <script src="/assets/js/popper.min.js"></script>
+      <script src="/assets/js/bootstrap.bundle.min.js"></script>
+      <script src="/assets/js/plugin.js"></script>
       <!-- sidebar -->
-      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-      <script src="js/custom.js"></script>
+      <script src="/assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="/assets/lib/owlcarousel/owl.carousel.min.js"></script>
       <!-- javascript --> 
-      <script src="js/owl.carousel.js"></script>
-      <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script> 
-      <script type="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2//2.0.0-beta.2.4/owl.carousel.min.js"></script>
-      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-      <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-      <script src="../../assets/js/vendor/popper.min.js"></script>
-      <script src="../../dist/js/bootstrap.min.js"></script>
+      <script src="/assets/js/slider-setting.js"></script>
+      <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+      

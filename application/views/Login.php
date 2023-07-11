@@ -3,9 +3,9 @@
   
    <body>
       <!--header section start -->
-      <div class="header_section" style="background: url('images/pexels-ruslan-khmelevsky-16887594.jpg'); background-repeat: no-repeat;">
+      <div class="header_section" style="background: url('assets/images/pexels-ruslan-khmelevsky-16887594.jpg'); background-repeat: no-repeat;">
          <nav class="navbar navbar-dark bg-dark">
-            <a class="logo" href="index.html"><img src="images/sakafoLogo.png"></a>
+            <a class="logo" href="index.html"><img src="assets/images/sakafoLogo.png"></a>
          </nav>
          <div class="banner_section layout_padding">
             <div class="container-fluid">
@@ -20,7 +20,7 @@
                               <a class="nav-link" href="about.html">About</a>
                            </li>
                            <li class="nav-item">
-                              <a class="nav-link" href="game.html">Login</a>
+                              <a class="nav-link" href="">Login</a>
                            </li>
                         </ul>
                      </div>
@@ -64,7 +64,7 @@
                   <div class="col-md-6">
                      <div class="map_main">
                         <div class="map-responsive">
-                           <img src="images/depositphotos_408905526-stock-illustration-survey-vector-illustration-flat-mini.jpg" alt="" srcset="">   
+                           <img src="assets/images/depositphotos_408905526-stock-illustration-survey-vector-illustration-flat-mini.jpg" alt="" srcset="">   
                         </div>
                      </div>
                   </div>

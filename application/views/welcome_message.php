@@ -7,7 +7,7 @@
       <!--header section start -->
       <div class="header_section">
          <nav class="navbar navbar-dark bg-dark">
-            <a class="logo" href="index.html"><img src="images/sakafoLogo.png"></a>
+            <a class="logo" href="/"><img src="assets/images/sakafoLogo.png"></a>
          </nav>
          <!--banner section start -->
          <div class="banner_section layout_padding">
@@ -21,10 +21,10 @@
                               <a class="nav-link" href="index.html">Home</a>
                            </li>
                            <li class="nav-item">
-                              <a class="nav-link" href="about.html">About</a>
+                              <a class="nav-link" href="about.php">About</a>
                            </li>
                            <li class="nav-item">
-                              <a class="nav-link" href="Login.html">Login</a>
+                              <a class="nav-link" href="Login.php">Login</a>
                            </li>
                         </ul>
                      </div>
@@ -40,13 +40,13 @@
          <div class="container">
             <div class="row">
                <div class="col-md-6">
-                  <h1 class="about_taital"><img src="images/63016.png" width="56px"> <span>Mombamomba anay</span></h1>
+                  <h1 class="about_taital"><img src="assets/images/63016.png" width="56px"> <span>Mombamomba anay</span></h1>
                   <p class="about_text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum</p>
                   <p class="about_text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum</p>
                   <div class="read_bt"><a href="#">Read More</a></div>
                </div>
                <div class="col-md-6">
-                  <div><img src="images/secret-gce792031e_640.jpg" class="image_1"></div>
+                  <div><img src="assets/images/secret-gce792031e_640.jpg" class="image_1"></div>
                </div>
             </div>
          </div>
@@ -59,18 +59,18 @@
                <div class="carousel-item active">
                   <div class="container">
                      <h1 class="casino_taital"> <span>indreto ary misy ohatra</span></h1>
-                     <div class="image_7"><img src="images/pexels-anthony-leong-2092897.jpg" width="200px"></div>
+                     <div class="image_7"><img src="assets/images/pexels-anthony-leong-2092897.jpg" width="200px"></div>
                   </div>
                </div>
                <div class="carousel-item">
                   <div class="container">
                      <h1 class="casino_taital"> <span>indreto ary misy ohatra</span></h1>
-                     <div class="image_7"><img src="images/pexels-anthony-leong-2092897.jpg" width="200px"></div>
+                     <div class="image_7"><img src="assets/images/pexels-anthony-leong-2092897.jpg" width="200px"></div>
                   </div>
                </div>
                <div class="carousel-item">
                   <h1 class="casino_taital"> <span>indreto ary misy ohatra</span></h1>
-                  <div class="image_7"><img src="images/pexels-anthony-leong-2092897.jpg" width="200px"></div>
+                  <div class="image_7"><img src="assets/images/pexels-anthony-leong-2092897.jpg" width="200px"></div>
                </div>
                <a class="carousel-control-prev" href="#main_slider" role="button" data-slide="prev">
                <i class="fa fa-angle-left"></i>
